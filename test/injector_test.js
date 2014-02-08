@@ -2,21 +2,24 @@ var should = require('should'),
     Injector = require('../lib/injector')
 
 describe("Injector", function() {
-  describe('#cleanGistUrl', function() {
+  describe('#scriptUrl', function() {
 
     it("adds raw if we need it", function() {
       var url = "https://gist.github.com/nottombrown/10dcdfdac7a226971304";
-      Injector.cleanGistUrl(url).should.equal(url + "/raw");
+      var injector = new Injector(url);
+      injector.scriptUrl.should.equal(url + "/raw");
     });
 
     it("doesn't add raw if we don't need it", function() {
       var url = "https://gist.github.com/nottombrown/10dcdfdac7a226971304/raw";
-      Injector.cleanGistUrl(url).should.equal(url);
+      var injector = new Injector(url);
+      injector.scriptUrl.should.equal(url);
     });
 
     it("returns false when invalid", function() {
       var url = "http://xkcd.com/1326/";
-      Injector.cleanGistUrl(url).should.equal(false);
+      injector = new Injector(url);
+      injector.scriptUrl.should.equal(false);
     });
   });
 });
