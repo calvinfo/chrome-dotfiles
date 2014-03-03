@@ -2,8 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Grouper/lobstertrap.png)](https://travis-ci.org/nottombrown/chrome-dotfiles)
 
-Customize your webapps. Dotfiles let you point to a gist file with javascript or css and have it run on pages that match the regex in the first line.
-
+A chrome plugin that lets you run code that you place into a gist whenever you visit a site that matches a regex.
 
 # Developing
 
@@ -13,7 +12,7 @@ Compile with
 browserify lib/inject.js -o built.js
 ```
 
-Run test with
+Run tests with
 
 ```bash
 mocha
