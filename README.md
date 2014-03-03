@@ -33,3 +33,5 @@ Run tests with
 ```bash
 mocha
 ```
+
+Use [Extensions-Reloader](https://chrome.google.com/webstore/detail/extensions-reloader/fimgfedafeadlieiabdeeaodndnlbhid) (and set a keyboard shortcut) to speed things up
