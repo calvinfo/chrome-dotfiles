@@ -1,7 +1,7 @@
 SRC= $(wildcard lib/*)
 REPORTER = dot
 
-all: clean build test
+all: build test
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha -R $(REPORTER)
@@ -18,4 +18,4 @@ clean:
 chrome-dotfiles.crx: build
 	@crxmake --pack-extension=.
 
-.PHONY: test clean
+.PHONY: test clean build

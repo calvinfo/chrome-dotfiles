@@ -4,9 +4,10 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": [
-    "lib/list_view.js",
+    "lib/gist_list_view.js",
     "index.js"
   ],
   "dependencies": {
+    "jashkenas/backbone": "*"
   }
 }

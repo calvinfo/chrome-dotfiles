@@ -1,6 +1,6 @@
 SRC= $(popup/* popup/lib/*)
 
-all: clean build
+all: build
 
 build: components $(SRC)
 	@component build --standalone chrome-dotfiles-popup
@@ -11,4 +11,4 @@ components: component.json
 clean:
 	rm -rf build components
 
-.PHONY: clean
+.PHONY: clean build
