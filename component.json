@@ -6,7 +6,8 @@
   "scripts": [
     "lib/background.js",
     "lib/gist_observer.js",
-    "lib/gistlist.js"
+    "lib/gist_list.js",
+    "lib/gist_injector.js"
   ],
   "dependencies": {
     "component/emitter": "*",
