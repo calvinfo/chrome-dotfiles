@@ -1,20 +1,22 @@
 SRC= $(wildcard lib/*)
 REPORTER = dot
 
-all: test build
+all: clean build test
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha -R $(REPORTER)
 
 build: components $(SRC)
 	@component build --standalone chrome-dotfiles
-	@component build --standalone chrome-dotfiles-popup
+	make -f popup/Makefile build
 
 components: component.json
 	@component install
 
 clean:
-	rm -fr build components chrome-dotfiles.pem chrome-dotfiles.crx
+	rm -rf build components chrome-dotfiles.pem chrome-dotfiles.crx
+	make -f popup/Makefile clean
+
 chrome-dotfiles.crx: build
 	@crxmake --pack-extension=.
 
