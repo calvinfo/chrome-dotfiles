@@ -3,18 +3,19 @@
   "description": "Customize your favorite apps with gists",
   "version": "0.0.0.1",
   "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
   "permissions": [
+    "tabs",
+    "storage",
     "https://gist.github.com/",
     "https://github.com/"
   ],
-  "browser_action": {
+  "page_action": {
+    "default_name": "dotfiles",
     "default_icon": "icon.png",
     "default_popup": "popup.html"
-  },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "http://*/*"],
-      "js": ["built.js"]
-    }
-  ]
+  }
 }
