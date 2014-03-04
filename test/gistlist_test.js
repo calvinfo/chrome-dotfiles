@@ -1,5 +1,5 @@
 var should = require('should'),
-    Injector = require('../lib/injector')
+    Injector = require('../lib/gistlist')
 
 describe("Injector", function() {
   describe('#scriptUrl', function() {
