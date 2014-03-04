@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": [
-    "lib/list_view.js"
+    "lib/list_view.js",
+    "index.js"
   ],
   "dependencies": {
   }

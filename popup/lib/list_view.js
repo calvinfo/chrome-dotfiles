@@ -1,5 +1,6 @@
-module.exports = ListView;
 
-ListView = function() {
-  console.log("OK")
+var ListView = function() {
+  console.log("OK8")
 }
+
+module.exports = ListView;

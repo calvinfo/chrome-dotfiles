@@ -21,12 +21,6 @@ npm install -g component
 
 or add ./node_modules/.bin/ to your PATH.
 
-If you want to compile the chrome extension, use [crxmake](https://github.com/Constellation/crxmake)
-```bash
-sudo gem install crxmake
-make chrome-dotfiles.crx
-```
-
 # Developing
 
 Compile with
@@ -35,7 +29,18 @@ Compile with
 make build
 ```
 
-Compile
+Compile popup with (TODO: fix this)
+
+```bash
+cd popup
+make build
+```
+
+If you want to compile the chrome extension, use [crxmake](https://github.com/Constellation/crxmake)
+```bash
+sudo gem install crxmake
+make chrome-dotfiles.crx
+```
 
 Run tests with
 
