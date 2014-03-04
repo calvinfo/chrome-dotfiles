@@ -15,18 +15,26 @@ npm install
 If you'd like to run browserify and mocha directly from the command line, either install those modules globablly
 
 ```bash
-npm install -g browserify mocha
+npm install -g mocha
 ```
 
 or add ./node_modules/.bin/ to your PATH.
+
+If you want to compile the chrome extension, use [crxmake](https://github.com/Constellation/crxmake)
+```bash
+sudo gem install crxmake
+make chrome-dotfiles.crx
+```
 
 # Developing
 
 Compile with
 
 ```bash
-browserify lib/inject.js -o built.js
+make build
 ```
+
+Compile
 
 Run tests with
 

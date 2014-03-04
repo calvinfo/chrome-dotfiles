@@ -2,3 +2,7 @@
 node_modules/
 /background.js
 /built.js
+*.sublime-project
+*.sublime-workspace
+components
+build
