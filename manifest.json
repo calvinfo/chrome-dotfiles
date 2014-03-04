@@ -4,9 +4,15 @@
   "version": "0.0.0.1",
   "manifest_version": 2,
   "permissions": [
+    "webRequest",
+    "storage",
     "https://gist.github.com/",
     "https://github.com/"
   ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
