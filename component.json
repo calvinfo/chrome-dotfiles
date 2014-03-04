@@ -1,0 +1,16 @@
+{
+  "name": "chrome-dotfiles",
+  "description": "chrome dotfiles",
+  "version": "0.1.0",
+  "main": "lib/injector.js",
+  "scripts": [
+    "lib/background.js",
+    "lib/gist_observer.js",
+    "lib/gistlist.js",
+    "lib/inject.js"
+  ],
+  "dependencies": {
+    "component/emitter": "*",
+    "visionmedia/debug": "*"
+  }
+}
