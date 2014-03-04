@@ -12,7 +12,7 @@ Install dependencies
 npm install
 ```
 
-If you'd like to run browserify and mocha, either install those modules globablly
+If you'd like to run browserify and mocha directly from the command line, either install those modules globablly
 
 ```bash
 npm install -g browserify mocha
