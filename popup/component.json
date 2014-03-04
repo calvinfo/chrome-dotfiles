@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": [
     "lib/gist_list_view.js",
+    "../lib/gist_list.js",
     "index.js"
   ],
   "dependencies": {
+    "jashkenas/underscore": "*",
     "jashkenas/backbone": "*"
   }
 }

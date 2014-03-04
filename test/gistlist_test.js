@@ -1,5 +1,5 @@
 var should = require('should'),
-    GistList = require('../lib/gistlist')
+    GistList = require('../lib/gist_list')
 
 describe("GistList", function() {
   describe('#all', function() {

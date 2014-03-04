@@ -1,8 +1,10 @@
-var Backbone = require("backbone")
+var _ = require("underscore");
+var Backbone = require("backbone");
 
 var GistListView = Backbone.Model.extend({
   render: function(){
-    console.log("render");
+    debugger
+    return this;
   }
 });
 
