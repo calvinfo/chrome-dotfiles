@@ -10,17 +10,11 @@
     "https://github.com/"
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["build/build.js"],
     "persistent": true
   },
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup/index.html"
-  },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "http://*/*"],
-      "js": ["built.js"]
-    }
-  ]
+  }
 }

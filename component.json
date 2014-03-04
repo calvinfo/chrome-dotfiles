@@ -2,12 +2,11 @@
   "name": "chrome-dotfiles",
   "description": "chrome dotfiles",
   "version": "0.1.0",
-  "main": "lib/injector.js",
+  "main": "lib/background.js",
   "scripts": [
     "lib/background.js",
     "lib/gist_observer.js",
-    "lib/gistlist.js",
-    "lib/inject.js"
+    "lib/gistlist.js"
   ],
   "dependencies": {
     "component/emitter": "*",
