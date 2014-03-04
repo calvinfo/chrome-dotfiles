@@ -13,8 +13,7 @@ components: component.json
 	@component install
 
 clean:
-	rm -fr build components chrome-dotfiles.*
-
+	rm -fr build components chrome-dotfiles.pem chrome-dotfiles.crx
 chrome-dotfiles.crx: build
 	@crxmake --pack-extension=.
 
