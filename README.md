@@ -12,10 +12,11 @@ Install dependencies
 npm install
 ```
 
-If you'd like to run browserify and mocha directly from the command line, either install those modules globablly
+If you'd like to use component and mocha directly from the command line, either install those modules globablly
 
 ```bash
 npm install -g mocha
+npm install -g component
 ```
 
 or add ./node_modules/.bin/ to your PATH.
