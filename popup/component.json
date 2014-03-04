@@ -1,0 +1,11 @@
+{
+  "name": "chrome-dotfiles-popup",
+  "description": "chrome dotfiles popup",
+  "version": "0.1.0",
+  "main": "lib/injector.js",
+  "scripts": [
+    "lib/list_view.js"
+  ],
+  "dependencies": {
+  }
+}

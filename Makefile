@@ -8,6 +8,7 @@ test:
 
 build: components $(SRC)
 	@component build --standalone chrome-dotfiles
+	@component build --standalone chrome-dotfiles-popup
 
 components: component.json
 	@component install
