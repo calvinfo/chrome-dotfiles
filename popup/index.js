@@ -1,5 +1,6 @@
-var GistListView = require("./lib/gist_list_view.js")
-console.log("OK4")
+var GistList = require("../lib/gist_list.js");
 
-var gistListView = new GistListView();
+var GistListView = require("./lib/gist_list_view.js")
+
+var gistListView = new GistListView({collection: GistList});
 gistListView.render();

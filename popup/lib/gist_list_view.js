@@ -3,7 +3,12 @@ var Backbone = require("backbone");
 
 var GistListView = Backbone.Model.extend({
   render: function(){
-    debugger
+    this.collection
+
+    _.each(this.collection.all, function(gist){
+      console.log(gist)
+    })
+    console.log("WAT")
     return this;
   }
 });
