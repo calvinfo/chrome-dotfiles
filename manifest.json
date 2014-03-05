@@ -4,10 +4,13 @@
   "version": "0.0.0.1",
   "manifest_version": 2,
   "permissions": [
+    "tabs",
+    "activeTab",
     "webRequest",
     "storage",
     "https://gist.github.com/",
-    "https://github.com/"
+    "https://github.com/",
+    "*://*/" // Unfortunate, but otherwise Chrome wont run our extension code on all pages
   ],
   "background": {
     "scripts": ["build/build.js"],
