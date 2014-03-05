@@ -1,0 +1,10 @@
+{
+  "name": "injector",
+  "description": "chrome dotfiles injector",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": [
+    "list-view.js",
+    "index.js"
+  ]
+}

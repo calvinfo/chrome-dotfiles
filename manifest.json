@@ -12,12 +12,13 @@
     "https://github.com/",
     "*://*/" // Unfortunate, but otherwise Chrome wont run our extension code on all pages
   ],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
   "background": {
     "scripts": ["build/build.js"],
     "persistent": true
   },
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup/index.html"
+    "default_popup": "popup.html"
   }
 }

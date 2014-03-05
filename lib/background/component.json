@@ -1,0 +1,16 @@
+{
+  "name": "background",
+  "description": "chrome dotfiles background",
+  "version": "0.1.0",
+  "main": "background.js",
+  "scripts": [
+    "background.js",
+    "gist_injector.js",
+    "gist_list.js",
+    "gist_observer.js",
+    "inject.js",
+    "injector.js"
+  ],
+  "dependencies": {
+  }
+}

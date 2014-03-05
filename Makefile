@@ -7,7 +7,7 @@ test:
 	@NODE_ENV=test ./node_modules/.bin/mocha -R $(REPORTER)
 
 build: components $(SRC)
-	@component build --standalone chrome-dotfiles
+	@component build --standalone boot
 
 components: component.json
 	@component install

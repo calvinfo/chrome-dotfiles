@@ -1,12 +1,14 @@
 {
-  "name": "chrome-dotfiles-popup",
+  "name": "popup",
   "description": "chrome dotfiles popup",
   "version": "0.1.0",
   "main": "index.js",
   "scripts": [
-    "lib/list_view.js",
+    "list-view.js",
     "index.js"
   ],
+  "templates": ["template.html"],
   "dependencies": {
+    "component/dom": "*"
   }
 }

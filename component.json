@@ -2,15 +2,8 @@
   "name": "chrome-dotfiles",
   "description": "chrome dotfiles",
   "version": "0.1.0",
-  "main": "lib/background.js",
-  "scripts": [
-    "lib/background.js",
-    "lib/gist_observer.js",
-    "lib/gist_list.js",
-    "lib/gist_injector.js"
-  ],
-  "dependencies": {
-    "component/emitter": "*",
-    "visionmedia/debug": "*"
-  }
+  "paths": ["lib"],
+  "local": ["background", "popup"],
+  "main": "index.js",
+  "scripts": ["index.js"]
 }
